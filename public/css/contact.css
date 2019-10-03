@@ -1,0 +1,36 @@
+body{
+  background-image: url(../images/computer.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-color: dodgerblue;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-content: center;
+}
+
+#heading{
+  background-color: cornflowerblue;
+  vertical-align: middle;
+  width: 30%;
+  height: 6%;
+  font-size: 6vh;
+  text-align: center;
+  position: relative;
+  top: 7vh;
+  left: 35vw;
+}
+
+#content{
+  text-align: center;
+  padding-left: 2%;
+  padding-right: 2%;
+  background-color: rgba(255,255,255,0.6);
+  width: 50vw;
+  position: relative;
+  left: 24vw;
+  top: 8vh;
+}
+
+#content label{
+  font-weight: bold;
+}

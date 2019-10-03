@@ -1,0 +1,24 @@
+{
+  "name": "astroid_picture_server",
+  "version": "1.0.0",
+  "description": "server for serving picture files for astroid game",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "astroids",
+    "game"
+  ],
+  "author": "Shaun Pienaar",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nedb": "^1.8.0"
+  },
+  "engines": {
+    "node": "8.11.1"
+  }
+}

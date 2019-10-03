@@ -1,0 +1,108 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    background-color: rgb(65, 105, 105);
+    width: 100%;
+    position: fixed;
+    left: -0%;
+    top: 0%;
+    z-index: 10;
+}
+
+nav a{
+    display: wrap;
+    color: white;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+
+nav a.active{
+    background-color: cadetblue;
+}
+
+nav a:hover{
+    background-color: white;
+    color: black;
+}
+
+nav a span{
+    min-width: 20px;
+    height: 80%;
+    display: inline-block;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+nav a.icon{
+    display: none;
+    float: right;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    background-size: contain;
+    background-image: url(../images/icons/menu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+nav a.home span{
+    background-image: url(../images/icons/home.png);
+}
+
+nav a.about span{
+    background-image: url(../images/icons/about.png);
+}
+
+nav a.contact span{
+    background-image: url(../images/icons/contact.png);
+}
+
+nav a.game span{
+    background-image: url(../images/icons/game.png);
+}
+
+@media screen and (max-width: 600px){
+    nav {
+        justify-content: left;
+    }
+    nav a:not(.active){
+        display: none;
+    }
+    nav a.icon{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 10%;
+        height: 40%;
+    }
+    .nav.list{
+        text-align: left;
+        flex-direction: column;
+        align-content: flex-start;
+    }
+    .nav.list a.icon{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 10%;
+        height: 10%;
+    }
+    .nav.list a{
+        display: block;
+        text-align: left;
+        width: 70%;
+    }
+}

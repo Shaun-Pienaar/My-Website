@@ -1,0 +1,57 @@
+body{
+  background-image: url(../images/code.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-color: dodgerblue;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#heading{
+  color: rgb(95, 91, 91);
+  width: 70%;
+  line-height: 100%;
+  height: 10%;
+  font-weight: bold;
+  font-size: 10vh;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  top: 35vh;
+  left: 15vw;
+  border: 1px solid black;
+  background-color: ghostwhite;
+  background-image:repeating-linear-gradient(180deg, rgb(0,0,0) 0%, rgb(0,0,255) 4%, rgb(255,0,0) 8%, transparent 10%, transparent 90%, rgb(255,0,0) 92%, rgb(0,0,255) 96%, rgb(0,0,0) 100%),
+    repeating-linear-gradient(-45deg, transparent 0%, transparent 85%, rgb(255,0,0) 88%, rgb(0,0,255) 94%, rgb(0,0,0) 100%),
+    repeating-linear-gradient(-45deg, rgb(0,0,0) 0%, rgb(0,0,255) 6%, rgb(255,0,0) 12%, transparent 15%, transparent 100%);
+}
+
+@media screen and (max-width: 460px) and (min-height: 600px){
+  #heading{
+    font-size: 8vh;
+  }
+}
+
+@media screen and (max-width: 450px) and (min-height: 400px){
+  #heading{
+    font-size: 6vh;
+  }
+}
+
+@media screen and (max-width: 350px) and (min-height: 300px){
+  #heading{
+    font-size: 6vh;
+  }
+}
+
+@media screen and (max-width: 250px) and (min-height: 250px){
+  #heading{
+    font-size: 4vh;
+  }
+}
+
+@media screen and (max-width: 300px) and (min-height: 500px){
+  #heading{
+    font-size: 5vh;
+  }
+}

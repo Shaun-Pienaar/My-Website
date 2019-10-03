@@ -1,0 +1,33 @@
+body{
+  background-image: url(../images/hardware.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-color: dodgerblue;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#heading{
+  background-color: cornflowerblue;
+  vertical-align: middle;
+  width: 36%;
+  height: 6%;
+  font-size: 6vh;
+  text-align: center;
+  position: relative;
+  top: 7vh;
+  left: 32vw;
+}
+
+#content{
+  background-color: rgba(255,255,255,0.6);
+  width: 70vw;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  position: relative;
+  top: 8vh;
+  left: 12vw;
+  font-size: 1.2em;
+}
