@@ -1,0 +1,60 @@
+body{
+  background-image: url(../images/download.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-color: dodgerblue;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#container{
+  display: grid;
+  grid-template-areas: 'pr1 pr2 pr3 pr4';
+  gap: 3%;
+  margin: 5%;
+}
+
+#project1{
+  grid-area: 'pr1';
+}
+
+#project2{
+  grid-area: 'pr2';
+}
+
+#project3{
+  grid-area: 'pr3';
+}
+
+#project4{
+  grid-area: 'pr4';
+}
+
+div div{
+  background-color: rgba(180,180,180,0.6);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 7%;
+}
+
+div div img{
+  width: 80%;
+  height: 40vh;
+}
+
+@media screen and (max-width: 800px){
+  #container{
+    grid-template-areas: 'pr1 pr2'
+                         'pr3 pr4'
+  }
+}
+
+@media screen and (max-width: 400px){
+  #container{
+    grid-template-areas: 'pr1' 'pr2' 'pr3' 'pr4';
+  }
+}

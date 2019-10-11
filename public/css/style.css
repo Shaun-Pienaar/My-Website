@@ -17,8 +17,8 @@ nav{
 }
 
 nav a{
-    display: wrap;
-    color: white;
+    display: inline;
+    color: black;
     padding-top: 1vh;
     padding-bottom: 1vh;
     padding-left: 2vw;
@@ -37,72 +37,46 @@ nav a:hover{
     color: black;
 }
 
-nav a span{
-    min-width: 20px;
-    height: 80%;
-    display: inline-block;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+nav a i{
+    margin-right: 1vw;
 }
 
-nav a.icon{
+nav #icon{
     display: none;
     float: right;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    background-size: contain;
-    background-image: url(../images/icons/menu.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-nav a.home span{
-    background-image: url(../images/icons/home.png);
-}
-
-nav a.about span{
-    background-image: url(../images/icons/about.png);
-}
-
-nav a.contact span{
-    background-image: url(../images/icons/contact.png);
-}
-
-nav a.game span{
-    background-image: url(../images/icons/game.png);
 }
 
 @media screen and (max-width: 600px){
     nav {
         justify-content: left;
     }
+    nav a{
+        width: 70%;
+    }
     nav a:not(.active){
         display: none;
     }
-    nav a.icon{
+    nav #icon{
         display: block;
         position: absolute;
         top: 0;
-        right: 0;
-        width: 10%;
-        height: 40%;
+        right: 20px;
+        width: 15%;
     }
     .nav.list{
         text-align: left;
         flex-direction: column;
         align-content: flex-start;
     }
-    .nav.list a.icon{
+    .nav.list #icon{
         position: absolute;
         top: 0;
-        right: 0;
-        width: 10%;
-        height: 10%;
+        right: 20px;
+        width: 15%;
     }
     .nav.list a{
         display: block;
-        text-align: left;
+        text-align: center;
         width: 70%;
     }
 }

@@ -305,6 +305,7 @@ function startLevel(){
   textFont('Times New Roman', round(objectSize/14*5.5));
   text('Stage ' + level, width/2-125, height/2-objectSize, 250, 100);
   noLoop();
+  player.pos = createVector(width/2,height/2);
   setTimeout(() => {
     createAstroids();
     loop();

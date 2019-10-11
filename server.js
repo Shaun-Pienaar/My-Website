@@ -31,6 +31,10 @@ app.get('/home', (req, res) => {
     res.sendFile(path.join(__dirname,'views/index.html'));
 });
 
+app.get('/projects', (req, res) => {
+    res.sendFile(path.join(__dirname,'views/projects.html'));
+});
+
 app.get('/about', (req, res) => {
     res.sendFile(path.join(__dirname, 'views/about.html'));
 });
