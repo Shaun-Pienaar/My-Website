@@ -436,7 +436,7 @@ function checkCollisions(){
 }
 
 async function getHighscores(){
-  let response = await fetch('http://localhost:3000/highscores');
+  let response = await fetch('highscores');
   let data = await response.json();
   highscores = data;
 }
@@ -449,7 +449,7 @@ async function saveHighscores(){
     },
     body:JSON.stringify(highscores)
   };
-  let response = await fetch('http://localhost:3000/highscores', request);
+  let response = await fetch('highscores', request);
   let data = await response.json();
   console.log(data);
 }
