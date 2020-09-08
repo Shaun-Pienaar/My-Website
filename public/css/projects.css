@@ -5,9 +5,55 @@ body{
   background-color: dodgerblue;
   background-repeat: no-repeat;
   background-size: cover;
+  align-content: center;
+}
+
+#heading{
+  vertical-align: middle;
+  width: 36%;
+  height: 6%;
+  font-size: 6vh;
+  text-align: center;
+  position: relative;
+  top: 7vh;
+  left: 32vw;
+  border: 3px solid black;
+  border-radius: 30%;
+  background-color:rgba(0, 0, 0, 0.2); ;
+  color: cyan;
+}
+
+#add{
+  font-size: 5vh;
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+  width: 50%;
+  text-align: center;
+  position: relative;
+  top: 7vh;
+  left: 25%;
+  border: 3px solid black;
+  border-radius: 20%;
+  background-color: rgba(175, 125, 175, 0.5);
+  color: rgb(56, 10, 94);
+  justify-items: center;
+  align-items: center;
+}
+
+#button{
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  padding: 0;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: rgb(117, 57, 173);
+  color: white;
 }
 
 #container{
+  position: relative;
+  top: 7vh;
   display: grid;
   grid-template-areas: 'pr1 pr2 pr3 pr4';
   gap: 3%;
@@ -15,35 +61,74 @@ body{
 }
 
 #project1{
+  border-radius: 10px;
   grid-area: 'pr1';
 }
 
 #project2{
+  border-radius: 10px;
   grid-area: 'pr2';
 }
 
 #project3{
+  border-radius: 10px;
   grid-area: 'pr3';
 }
 
 #project4{
+  border-radius: 10px;
   grid-area: 'pr4';
 }
 
+div div p{
+  display: none;
+  margin: 10%;
+  width: 80%;
+}
+
+#add div a{
+  display: inline;
+}
+
 div div{
+  transition: 1s;
+  background-color: transparent;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 7%;
+}
+
+div div div{
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 25%;
+  width: 20vw;
+  transition: 1s;
   background-color: rgba(180,180,180,0.6);
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 5%;
-  padding-right: 5%;
   padding-bottom: 7%;
+}
+
+div .top{
+  opacity: 1;
+}
+
+div .bottom{
+  transform: rotateX(360deg);
+  opacity: 0;
 }
 
 div div img{
   width: 80%;
-  height: 40vh;
+  height: 20vh;
 }
 
 @media screen and (max-width: 800px){
@@ -51,10 +136,18 @@ div div img{
     grid-template-areas: 'pr1 pr2'
                          'pr3 pr4'
   }
+
+  div div div{
+    width: 40vw;
+  }
 }
 
 @media screen and (max-width: 400px){
   #container{
     grid-template-areas: 'pr1' 'pr2' 'pr3' 'pr4';
+  }
+
+  div div div{
+    width: 70vw;
   }
 }

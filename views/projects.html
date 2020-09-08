@@ -19,33 +19,56 @@
       <a id="icon" onclick="dropDown()"><i class="fas fa-align-justify"></i></a>
     </nav>
     <h1 id="heading">Projects</h1>
+    <div id="add">
+      <p style="margin: 5%;">Try our old school Classic.</p>
+      <img src="../images/project4.jpg" alt="Picture of 'Astroids' clone" style="width: 50%; height: 50%;">
+      <div id="button">
+        <a href="game">Play</a>
+      </div>
+    </div>
     <div id="container">
-      <div id="project1">
-        <h2>My Website</h2>
-        <img src="../images/project1.jpg" alt="Picture of my website">
-        <p>Website I created to show my projects and basic knowledge of HTML, CSS and Javascript.</p>
-        <a href="https://github.com/Shaun-Pienaar/My-Website.git">Github repo</a>
-        <a href="home">Rising Developer</a>
+      <div id="project1" onclick="switchClass()">
+        <div class="top">
+          <h2>My Website</h2>
+          <img src="../images/project1.jpg" alt="Picture of my website">
+          <p>Website I created to show my projects and basic knowledge of HTML, CSS and Javascript.</p>
+        </div>
+        <div class="bottom">
+          <a href="https://github.com/Shaun-Pienaar/My-Website.git">Github repo</a>
+          <a href="home">Rising Developer</a>
+        </div>
       </div>
-      <div id="project2">
-        <h2>Unity Game</h2>
-        <img src="../images/project2.jpg" alt="Picture of my Unity game">
-        <p>Originally a Unity tutorial that I extented with added features, stages, highscores and a menu.</p>
-        <a href="https://github.com/Shaun-Pienaar/Space-Shooter.git">Github repo</a>
+      <div id="project2" onclick="switchClass2()">
+        <div class="top">
+          <h2>Unity Game</h2>
+          <img src="../images/project2.jpg" alt="Picture of my Unity game">
+          <p>Originally a Unity tutorial that I extented with added features, stages, highscores and a menu.</p>
+        </div>
+        <div class="bottom">
+          <a href="https://github.com/Shaun-Pienaar/Space-Shooter.git">Github repo</a>
+        </div>
       </div>
-      <div id="project3">
-        <h2>Weather app</h2>
-        <img src="../images/project3.jpg" alt="Picture of my weather app">
-        <p>A small web apllication that gives the weather for any city at any given time</p>
-        <a href="https://github.com/Shaun-Pienaar/Weather-App.git">Github repo</a>
-        <a href="https://anyweather.herokuapp.com">Get Weather</a>
+      <div id="project3" onclick="switchClass3()">
+        <div class="top">
+          <h2>Weather app</h2>
+          <img src="../images/project3.jpg" alt="Picture of my weather app">
+          <p>A small web apllication that gives the weather for any city at any given time</p>
+        </div>
+        <div class="bottom">
+          <a href="https://github.com/Shaun-Pienaar/Weather-App.git">Github repo</a>
+          <a href="https://anyweather.herokuapp.com">Get Weather</a>
+        </div>
       </div>
-      <div id="project4">
-        <h2>Astroids clone</h2>
-        <img src="../images/project4.jpg" alt="Picture of my 'Astroids' clone">
-        <p>A browser game I made as a clone of the classic game "Astroids".</p>
-        <a href="https://github.com/Shaun-Pienaar/Astroids-clone.git">Github repo</a>
-        <a href="game">Rising Developer</a>
+      <div id="project4" onclick="switchClass4()">
+        <div class="top">
+          <h2>Astroids clone</h2>
+          <img src="../images/project4.jpg" alt="Picture of my 'Astroids' clone">
+          <p>A browser game I made as a clone of the classic game "Astroids".</p>
+        </div>
+        <div class="bottom">
+          <a href="https://github.com/Shaun-Pienaar/Astroids-clone.git">Github repo</a>
+          <a href="game">Rising Developer</a>
+        </div>
       </div>
     </div>
   </body>

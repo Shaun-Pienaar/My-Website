@@ -9,7 +9,10 @@ body{
 }
 
 #heading{
-  background-color: cornflowerblue;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 3px solid black;
+  border-radius: 30%;
+  color: cyan;
   vertical-align: middle;
   width: 30%;
   height: 6%;
@@ -21,6 +24,7 @@ body{
 }
 
 #content{
+  border-radius: 20px;
   text-align: center;
   padding-left: 2%;
   padding-right: 2%;
