@@ -17,10 +17,14 @@ body{
   position: relative;
   top: 7vh;
   left: 32vw;
-  border: 3px solid black;
-  border-radius: 30%;
-  background-color:rgba(0, 0, 0, 0.2); ;
-  color: cyan;
+  background-color: rgba(50, 60, 70, 0.3);;
+  border-top: 2px solid rgb(52, 60, 71);
+  border-left: 2px solid rgb(52, 60, 71);
+  border-right: 5px solid rgb(52, 60, 71);
+  border-bottom: 5px solid rgb(52, 60, 71);
+  border-top-right-radius: 80%;
+  border-top-left-radius: 80%;
+  color: rgb(228, 225, 189);
 }
 
 #add{
@@ -33,10 +37,13 @@ body{
   position: relative;
   top: 7vh;
   left: 25%;
-  border: 3px solid black;
+  border-top: 2px solid rgb(52, 60, 71);
+  border-left: 2px solid rgb(52, 60, 71);
+  border-right: 5px solid rgb(52, 60, 71);
+  border-bottom: 5px solid rgb(52, 60, 71);
   border-radius: 20%;
-  background-color: rgba(175, 125, 175, 0.5);
-  color: rgb(56, 10, 94);
+  background-color: rgba(192, 192, 192, 0.5);
+  color: black;
   justify-items: center;
   align-items: center;
 }
@@ -45,9 +52,9 @@ body{
   margin-top: 2vh;
   margin-bottom: 2vh;
   padding: 0;
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 5px;
-  background-color: rgb(117, 57, 173);
+  background-color: rgb(91, 100, 110);
   color: white;
 }
 
@@ -101,6 +108,10 @@ div div{
 }
 
 div div div{
+  border-top: 2px solid rgb(52, 60, 71);
+  border-left: 2px solid rgb(52, 60, 71);
+  border-right: 5px solid rgb(52, 60, 71);
+  border-bottom: 5px solid rgb(52, 60, 71);
   position: relative;
   top: 0;
   bottom: 0;
@@ -109,7 +120,7 @@ div div div{
   border-radius: 25%;
   width: 20vw;
   transition: 1s;
-  background-color: rgba(180,180,180,0.6);
+  background-color: rgba(192, 192, 192, 0.6);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -149,5 +160,15 @@ div div img{
 
   div div div{
     width: 70vw;
+  }
+}
+
+@media screen and (max-width: 600px){
+  #heading{
+    font-size: 7vw;
+  }
+
+  #add{
+    font-size: 7vw;
   }
 }

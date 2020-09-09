@@ -4,20 +4,25 @@ body{
 }
 
 nav{
+    border-top: 2px solid rgb(52, 60, 71);
+    border-left: 2px solid rgb(52, 60, 71);
+    border-right: 5px solid rgb(52, 60, 71);
+    border-bottom: 5px solid rgb(52, 63, 74);
     border-radius: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
-    background-color: rgb(65, 105, 105);
-    width: 100%;
+    background-color: rgb(192, 192, 192);
+    width: 96%;
     position: fixed;
-    left: -0%;
+    left: 2%;
     top: 1%;
     z-index: 10;
 }
 
 nav a{
+    border-radius: 40%;
     display: inline;
     color: black;
     padding-top: 1vh;
@@ -30,7 +35,7 @@ nav a{
 }
 
 nav a.active{
-    background-color: cadetblue;
+    background-color: rgb(91, 100, 110);
 }
 
 nav a:hover{
