@@ -117,7 +117,7 @@ div div div{
   bottom: 0;
   left: 0;
   right: 0;
-  border-radius: 25%;
+  border-radius: 5vw;
   width: 20vw;
   transition: 1s;
   background-color: rgba(192, 192, 192, 0.6);

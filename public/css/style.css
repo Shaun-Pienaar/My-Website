@@ -22,7 +22,7 @@ nav{
 }
 
 nav a{
-    border-radius: 40%;
+    border-radius: 5vw;
     display: inline;
     color: black;
     padding-top: 1vh;
@@ -52,7 +52,7 @@ nav #icon{
     float: right;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 700px){
     nav {
         justify-content: left;
     }

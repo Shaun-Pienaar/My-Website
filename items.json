@@ -1,0 +1,28 @@
+{
+  "donations":[
+    {
+      "id": 1,
+      "name": "Donate R5",
+      "price": 500,
+      "imgName": "item1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Donate R10",
+      "price": 1000,
+      "imgName": "item2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Donate R20",
+      "price": 2000,
+      "imgName": "item3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Donate R50",
+      "price": 5000,
+      "imgName": "item4.jpg"
+    }
+  ]
+}

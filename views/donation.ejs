@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/donation.css">
+    <script src="https://kit.fontawesome.com/cf717cb818.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="js/donationScript.js"></script>
+    <title>Donations</title>
+  </head>
+  <body>
+    <nav class="nav" id="myNav">
+      <a href="home" class="home"><i class="fas fa-home"></i>Home</a>
+      <a href="projects" class="projects"><i class="fas fa-project-diagram"></i>Projects</a>
+      <a href="about" class="about"><i class="far fa-question-circle"></i>About</a>
+      <a href="contact" class="contact"><i class="fas fa-address-card"></i>Contact Me</a>
+      <a href="donation" class="donation"><i class="fas fa-money-check-alt"></i>Donations</a>
+      <a href="game" class="game"><i class="fas fa-gamepad"></i>Game</a>
+      <a id="icon" onclick="dropDown()"><i class="fas fa-align-justify"></i></a>
+    </nav>
+    <h1 id="heading">Store</h1>
+    <p id="disclaimer">DISCLAIMER: Although I welcome all donations, this page is merely to display my abillity to handle online transactions. All clients and merchants can also get an email notification of every successful transaction</p>
+    <h3 class="sub-heading">Catalogue</h3>
+    <div id="store">
+      <% items.donations.forEach(item => { %>
+        <div class="store-item" data-item-id="<%= item.id %>">
+          <span class="store-item-title"><%= item.name %></span>
+          <img class="store-item-img" src="images/<%= item.imgName %>" width="10%" height="10%">
+          <div class="store-item-details">
+            <span class="store-item-price">Price: R<%= item.price/100 %></span>
+            <button class="btn store-item-button" onclick="addToCart(event)" type="button">Add to cart</button>
+          </div>
+        </div>
+      <% }); %>
+    </div>
+    <h3 class="sub-heading">Cart</h3>
+    <div id="cart">
+      <div class="header">
+        <h4>Item</h4>
+        <h4>Price</h4>
+        <h4>Quantity</h4>
+        <h4>Sub-Total</h4>
+      </div>
+    </div>
+    <div id="cartTotal">
+      <h3 class="cartTotal-lable">Total Price:  R0</h3>
+      <button class="btn purchase-button" onclick="purchase()" type="button">Purchase</button>
+    </div>
+
+    <div id="info" style="display: none;">
+      <h2>Info</h2>
+      <label class="name_first_lable">First Name:</label>
+      <input type="text" class="name_first" value="optional">
+      <label class="name_last_lable">Last Name:</label>
+      <input type="text" class="name_last" value="optional">
+      <label class="email_address_lable">Email Address (to recieve payment confirmation):</label>
+      <input type="email" class="email_address" value="optional@gmail.com">
+      <label class="cell_number_lable">Cell Number:</label>
+      <input type="tel" class="cell_number" value="0820000000">
+      <button class="btn confirm-button" onclick="confirmation()" type="button">Confirm</button>
+    </div>
+
+
+  </body>
+</html>
