@@ -3,6 +3,10 @@ function addToCart(event){
   let button = event.target;
   let item = button.parentNode.parentNode;
   let cart = document.getElementById("cart");
+  let cartholder = cart.parentElement;
+
+  cartholder.style = "display: block;";
+  document.getElementsByTagName('body')[0].style = "margin-bottom: 25%"
 
   let itemName = item.getElementsByClassName("store-item-title")[0].innerText;
   let itemPrice = item.getElementsByClassName("store-item-price")[0].innerText;
@@ -63,10 +67,14 @@ function addToCart(event){
 }
 
 function removeItem(event){
-  console.log(event);
   let elt = event.target.parentElement;
-  console.log(elt);
-  elt.parentElement.removeChild(elt);
+  let cart = elt.parentElement;
+  let cartholder = cart.parentElement;
+  cart.removeChild(elt);
+  if(cart.getElementsByClassName("cart-item").length <= 0){
+    cartholder.style = "display: none";
+    document.getElementsByTagName("body")[0].style = "margin-bottom: 3%";
+  }
 
   reCalculateCartTotal();
 }

@@ -35,30 +35,32 @@
         </div>
       <% }); %>
     </div>
-    <h3 class="sub-heading">Cart</h3>
-    <div id="cart">
-      <div class="header">
-        <h4>Item</h4>
-        <h4>Price</h4>
-        <h4>Quantity</h4>
-        <h4>Sub-Total</h4>
+    <div id="cartholder">
+      <h3 class="sub-heading">Cart</h3>
+      <div id="cart">
+        <div class="header">
+          <h4>Item</h4>
+          <h4>Price</h4>
+          <h4>Quantity</h4>
+          <h4>Sub-Total</h4>
+        </div>
       </div>
-    </div>
-    <div id="cartTotal">
-      <h3 class="cartTotal-lable">Total Price:  R0</h3>
-      <button class="btn purchase-button" onclick="purchase()" type="button">Purchase</button>
+      <div id="cartTotal">
+        <h3 class="cartTotal-lable">Total Price:  R0</h3>
+        <button class="btn purchase-button" onclick="purchase()" type="button">Purchase</button>
+      </div>
     </div>
 
     <div id="info" style="display: none;">
       <h2>Info</h2>
       <label class="name_first_lable">First Name:</label>
-      <input type="text" class="name_first" value="optional">
+      <input type="text" class="name_first" placeholder="optional">
       <label class="name_last_lable">Last Name:</label>
-      <input type="text" class="name_last" value="optional">
+      <input type="text" class="name_last" placeholder="optional">
       <label class="email_address_lable">Email Address (to recieve payment confirmation):</label>
-      <input type="email" class="email_address" value="optional@gmail.com">
+      <input type="email" class="email_address" placeholder="optional@gmail.com">
       <label class="cell_number_lable">Cell Number:</label>
-      <input type="tel" class="cell_number" value="0820000000">
+      <input type="tel" class="cell_number" placeholder="0820000000">
       <button class="btn confirm-button" onclick="confirmation()" type="button">Confirm</button>
     </div>
 
