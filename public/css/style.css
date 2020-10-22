@@ -1,13 +1,28 @@
+@font-face {
+    font-family: 'revorioumregular';
+    src: url('../fonts/revorioum_personal_use-webfont.woff2') format('woff2'),
+         url('../fonts/revorioum_personal_use-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+@font-face {
+  font-family: 'intenci_demoregular';
+  src: url('../fonts/intencidemoregular-webfont.woff2') format('woff2'),
+       url('../fonts/intencidemoregular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body{
     padding: 0;
     margin: 0;
 }
 
 nav{
-    border-top: 2px solid rgb(52, 60, 71);
-    border-left: 2px solid rgb(52, 60, 71);
-    border-right: 5px solid rgb(52, 60, 71);
-    border-bottom: 5px solid rgb(52, 63, 74);
+    box-shadow: 2px 4px 5px 5px rgb(40, 47, 58);
+    text-shadow: 2px 1px 1px blanchedalmond;
+    font-family: 'WebFont', 'intenci_demoregular';
+    font-weight: bold;
     border-radius: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -35,7 +50,7 @@ nav a{
 }
 
 nav a.active{
-    background-color: rgb(91, 100, 110);
+    background-color: rgb(231, 231, 231);
 }
 
 nav a:hover{

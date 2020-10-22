@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'assassinregular';
+  src: url('../fonts/assassin-webfont.woff2') format('woff2'),
+       url('../fonts/assassin-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body{
   background-image: url(../images/hardware.jpg);
   background-position: center;
@@ -13,6 +21,9 @@ body{
   border-left: 2px solid rgb(52, 60, 71);
   border-right: 5px solid rgb(52, 60, 71);
   border-bottom: 5px solid rgb(52, 60, 71);
+  box-shadow: 5px 5px 3px black;
+  text-shadow: 5px 3px 2px rgb(52, 60, 71);
+  font-family: 'WebFont', 'assassinregular';
   border-top-right-radius: 80%;
   border-top-left-radius: 80%;
   color: rgb(228, 225, 189);
@@ -29,10 +40,11 @@ body{
 #content{
   border-top: 3px solid rgb(52, 60, 71);
   border-left: 3px solid rgb(52, 60, 71);
-  border-right: 8px solid rgb(52, 60, 71);
-  border-bottom: 8px solid rgb(52, 60, 71);
+  border-right: 3px solid rgb(52, 60, 71);
+  border-bottom: 3px solid rgb(52, 60, 71);
+  box-shadow: 8px 10px 6px black;
   border-radius: 20px;
-  background-color: rgba(192, 192, 192, 0.6);
+  background-color: rgba(192, 192, 192, 0.8);
   width: 70vw;
   padding-left: 3%;
   padding-right: 3%;
@@ -41,7 +53,7 @@ body{
   position: relative;
   top: 8vh;
   left: 12vw;
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 @media screen and (max-width: 600px){

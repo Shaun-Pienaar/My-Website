@@ -1,3 +1,19 @@
+@font-face {
+  font-family: 'assassinregular';
+  src: url('../fonts/assassin-webfont.woff2') format('woff2'),
+       url('../fonts/assassin-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'intenci_demoregular';
+  src: url('../fonts/intencidemoregular-webfont.woff2') format('woff2'),
+       url('../fonts/intencidemoregular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body{
   background-image: url(../images/computer.jpg);
   background-position: center;
@@ -14,6 +30,9 @@ body{
   border-left: 2px solid rgb(52, 60, 71);
   border-right: 5px solid rgb(52, 60, 71);
   border-bottom: 5px solid rgb(52, 60, 71);
+  box-shadow: 5px 5px 3px black;
+  font-family: 'WebFont', 'assassinregular';
+  text-shadow: 5px 3px 2px rgb(52, 60, 71);
   border-top-right-radius: 80%;
   border-top-left-radius: 80%;
   color: rgb(228, 225, 189);
@@ -30,8 +49,12 @@ body{
 #content{
   border-top: 3px solid rgb(52, 60, 71);
   border-left: 3px solid rgb(52, 60, 71);
-  border-right: 8px solid rgb(52, 60, 71);
-  border-bottom: 8px solid rgb(52, 60, 71);
+  border-right: 3px solid rgb(52, 60, 71);
+  border-bottom: 3px solid rgb(52, 60, 71);
+  box-shadow: 8px 10px 6px black;
+  font-family: 'WebFont', 'intenci_demoregular';
+  text-shadow: 1px 1px white;
+  font-size: 1.7em;
   border-radius: 20px;
   background-color: rgba(192, 192, 192, 0.6);
   text-align: center;
@@ -44,7 +67,7 @@ body{
 }
 
 #content label{
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 @media screen and (max-width: 600px){
